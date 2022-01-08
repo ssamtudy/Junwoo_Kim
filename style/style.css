@@ -1,0 +1,37 @@
+/* color */
+:root {
+  --color1: #433DF2;
+  --color2:#FBF37C;
+}
+body{
+  background-color: var(--color1);
+  color: whitesmoke;
+  font-family: 'ONE-Mobile-POP';
+}
+#app{
+  
+}
+/* flex */
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+/* animation */
+@keyframes fadein {
+  from {opacity:0}
+    to {opacity:1}
+}
+.fadein{
+  animation: fadein 0.7s;
+}
+@keyframes fadeout {
+  from {opacity:1}
+    to {opacity:0}
+}
+.fadeout {
+  animation: fadeout 2s;
+}
+/* hidden */
+.hidden{
+  display: none;
+}

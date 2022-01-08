@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/font.css">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/login-page.css">
+    <link rel="stylesheet" href="style/start-page2.css">
+    <link rel="stylesheet" href="style/module.css">
+
+    <title>투두리스트(준우)</title>
+  </head>
+  <body>
+    <div id="app">
+      <!-- LOG-IN PAGE -->
+      <div id="login-page" class="fadein">
+        <form id="login-form">
+          <div class="flex-column">
+            <p>Welcome!</p>
+            <em>Please type your name below</em>
+            <input type="text" required placeholder="press Enter or click START" maxlength="10">
+            <button>START</button>
+          </div>
+        </form>
+      </div>
+      <!-- START PAGE -->
+      <div id="start-page" class="fadein">
+        <div class="flex-column">
+          <!-- CLOCK -->
+          <section id="clock" class="flex-column">
+            <div class="date-clock"></div>
+            <div class="time-clock">0:00:00 PM</div>
+          </section>
+          <!-- QUOTE -->
+          <section id="quotewrap">
+            <div id="quote"></div>
+            <p>from '12 RULES FOR LIFE - Jordan B. Peterson'</p>
+          </section>
+          <!-- USER -->
+          <div id="user">
+            <div class="userwrap">
+              <div class="signed-in-user"></div>
+              <button class="rename" type="button">
+                <img src="img/rename.svg">
+              </button>
+            </div>
+          </div>
+          <!-- TODO LIST -->
+          <div id="todo-list">
+            <button class="todo-btn" type="button"><img src="img/list.svg"></button>
+            <div class="todo-page fadein">
+              <form class="todo-form">
+                <p>what do you want to do today?</p>
+                <input type="text" placeholder="write To-dos & press Enter...">
+              </form>
+              <ul class="todo-box flex-column"></ul>
+            </div>
+          </div>
+          </section>
+        </div>
+    </div>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quote.js"></script>
+    <!-- <script src="js/todolist.js"></script> -->
+    <!-- <script src="js/todolist2.js"></script> -->
+    <!-- <script src="js/todolist3js"></script> -->
+    <script src="js/todolist4.js"></script>
+  </body>
+</html>

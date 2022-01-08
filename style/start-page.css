@@ -1,0 +1,145 @@
+#start-page{
+  padding: 30px;
+  font-size: 20px;
+  position: relative;
+}
+#start-page>.flex-column{
+  gap: 40px;
+  padding-top: 10%;
+}
+/* clock */
+#clock{
+  width: 100%;
+  text-align: center;
+  /* font-size: 60px; */
+  font-family: 'ONE-Mobile-POP';
+}
+#clock.flex-column{
+  gap: 50px;
+}
+.time-clock{
+  /* font-size: 40px; */
+  /* font-family: 'SF_IceLemon'; */
+  font-family:cursive;
+}
+/* user */
+#user{}
+.userwrap{
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  width: 32%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.rename{
+  position: absolute;
+  bottom: -4px;
+  right: -60px;
+}
+.rename img:hover{
+  filter: none;
+  transition: 0.7s;
+}
+.rename img{
+  width: 50px;
+  height: 50px;
+  filter: invert();
+}
+/* quote */
+#quotewrap{
+  text-align: center;
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: 'establishRoomNo703OTF';
+}
+#quote{  
+  font-style: italic;
+}
+#quotewrap p {
+  font-size: 20px;
+}
+/* todo list */
+#todo-list{
+  /* border: 10px solid tomato; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  transition: 0.7s;
+  font-size: 20px;
+  background-color: var(--color1);
+}
+.todo-btn{
+  float: right;
+}
+.todo-btn img{
+  width: 30px;
+  height: 30px;
+  filter: invert();
+}
+.todo-page,
+.todo-form,
+.todo-box{
+  /* border: 5px solid white; */
+  padding: 10px;
+} 
+.todo-page {
+  clear: both;
+  padding: 20px;
+}
+.todo-form{
+  border: 5px solid white;
+  display: flex;
+  flex-direction: column;
+}
+.todo-form input{
+  margin: 10px;
+  padding: 8px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  background-color: inherit;
+  color: white;
+  font-family: 'ONE-Mobile-POP';
+}
+.todo-form input::placeholder{
+  color: white;
+  font-style: italic;
+}
+.todo-form input:focus,
+.todo-form input:hover,
+.todo-form input:focus::placeholder,
+.todo-form input:hover::placeholder{
+  transition: 0.7s;
+  color: var(--color1);
+}
+.todo-form input:focus,
+.todo-form input:hover {
+  background-color: whitesmoke;
+}
+/* todolist */
+.todo-box{
+  margin-top: 10px;
+  justify-content: center;
+  gap: 10px;
+}
+.todo-box li {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  animation: fadein 0.7s;
+}
+.todo-box li p {
+  min-width: 70%;
+  text-align: center;
+  border-bottom: 2px solid white;
+  padding-bottom: 3px;
+}
+.todo-box li button {
+  font-size: 30px;
+}
